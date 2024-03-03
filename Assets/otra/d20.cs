@@ -8,12 +8,16 @@ using static UnityEditor.Searcher.SearcherWindow.Alignment;
 public class d20 : MonoBehaviour
 {
     public Material material;
+    public float x6, y6, x9, y9;
     // Start is called before the first frame update
     void Start()
     {
+        //CreateCube();
+    }
+    private void Update()
+    {
         CreateCube();
     }
-
     // Update is called once per frame
     void CreateCube()
     {
@@ -35,6 +39,8 @@ public class d20 : MonoBehaviour
             new Vector3(1,2,0.5f),//9
             new Vector3(0,2,0.5f),//10
             new Vector3(0.5f,2,-0.5f),//11
+
+
         };
 
         int[] triangles =
@@ -66,6 +72,23 @@ public class d20 : MonoBehaviour
             //arriba
             9,11,10//10,11,12
         };
+        Vector2[] uvs = {
+            new Vector4(0.33398435f,0.051587125f,0.80706171875f,0.8701171875f),//new Vector2(0.33398435f,0.051587125f),//1
+            new Vector4(0.1455078125f,0.051587125f,0.6181640625f,0.8701171875f),//new Vector2(0.1455078125f,0.051587125f),//2
+            new Vector2(0.2392578125f,0.21484375f),//3
+            new Vector2(0.33398435f,0.37890625f),//4
+            new Vector2(0.4296815f,0.21484375f),//5
+            new Vector2(x6,y6),//new Vector2(0.712890625f,0.37890625f),//6
+            new Vector2(0.712890625f,0.7060546875f),//7
+            new Vector2(0.5244140625f,0.7060546875f),//8
+            new Vector2(x9,y9),//new Vector2(0.2392578125f,0.5419921875f),//9
+            new Vector2(0.42773435f,0.5419921875f),//10
+            new Vector2(0.5244140625f,0.37890625f),//11
+            new Vector2(0.6181640625f,0.5419921875f),//12
+
+
+
+        };
 
         Mesh mesh = GetComponent<MeshFilter>().mesh;
         MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
@@ -73,7 +96,7 @@ public class d20 : MonoBehaviour
         mesh.Clear();
         mesh.vertices = vertices;
         mesh.triangles = triangles;
-        //mesh.uv = uvs;
+        mesh.uv = uvs;
         mesh.Optimize();
         mesh.RecalculateNormals();
     }
