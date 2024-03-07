@@ -28,19 +28,19 @@ public class d202 : MonoBehaviour
         new Vector3(0, 0, 0),//4
         new Vector3(0, 0, 0),//5
         //enmedioabajo
-        new Vector3(-0.55f, 1.1f, -1.7f),//6
-        new Vector3(1.55f, 1.1f, -1.05f),//7
-        new Vector3(-1.8f, 1.1f, 0),//8
-        new Vector3(-0.55f, 1.1f, -1.7f),//9
-        new Vector3(1.55f, 1.1f, 1.05f),//10
-        new Vector3(-0.55f, 1.1f, 1.7f),//11
+        new Vector3(-0.65f, 1.2f, -1.8f),//6
+        new Vector3(1.65f, 1.2f, -1.15f),//7
+        new Vector3(-1.9f, 1.2f, 0),//8
+        new Vector3(-0.65f, 1.2f, -1.8f),//9
+        new Vector3(1.65f, 1.2f, 1.15f),//10
+        new Vector3(-0.65f, 1.2f, 1.8f),//11
         //enemdioarriba
-        new Vector3(0.55f, 2.9f, -1.7f), //12
-        new Vector3(-1.45f, 2.9f, -1.05f), //13
-        new Vector3(1.8f, 2.9f, 0),//14
-        new Vector3(-1.45f, 2.9f, -1.05f),//15
-        new Vector3(-1.45f, 2.9f, 1.05f), //16
-        new Vector3(0.55f, 2.9f, 1.7f), //17
+        new Vector3(0.65f, 3f, -1.8f), //12
+        new Vector3(-1.55f, 3f, -1.15f), //13
+        new Vector3(1.9f, 3f, 0),//14
+        new Vector3(-1.55f, 3f, -1.15f),//15
+        new Vector3(-1.55f, 3f, 1.15f), //16
+        new Vector3(0.65f, 3f, 1.8f), //17
         //arriba
         new Vector3(0, 4, 0),  //18
         new Vector3(0, 4, 0), //19
